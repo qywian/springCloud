@@ -1,0 +1,15 @@
+server:
+    port: 8080
+spring:
+    jpa:
+      generate-ddl: false
+      show-sql: true
+
+    datasource:
+      url: jdbc:mysql://172.16.36.105:3306/cloud_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: cloud_demo
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+management:
+     security:
+       enabled: false

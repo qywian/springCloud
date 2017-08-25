@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: microservice-eureka-ha
+  profiles: qyw_2
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: qyw_2
+  client:
+    service-url:
+        defaultZone: http://qyw_1:8761/eureka/
