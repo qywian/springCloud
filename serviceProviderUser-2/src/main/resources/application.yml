@@ -1,0 +1,29 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: service-provider-user
+  jpa:
+      generate-ddl: false
+      show-sql: true
+  datasource:
+      url: jdbc:mysql://172.16.36.105:3306/cloud_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: cloud_demo
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+management:
+     security:
+       enabled: false
+logging:                                # 配置日志级别，让hibernate打印出执行的SQL
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://user:123456@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

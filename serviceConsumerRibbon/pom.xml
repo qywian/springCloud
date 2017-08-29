@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>EurekaServer</artifactId>
+    <artifactId>serviceConsumerRibbon</artifactId>
     <packaging>jar</packaging>
 
-    <name>EurekaServer</name>
+    <name>serviceConsumerRibbon</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -20,11 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
 </project>

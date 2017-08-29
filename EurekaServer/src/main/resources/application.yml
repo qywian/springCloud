@@ -1,5 +1,11 @@
 server:
   port: 8761
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: 123456
 eureka:
   client:
     register-with-eureka: false
@@ -8,3 +14,43 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
   server:
     enable-self-preservation: false
+
+#多网卡情况下
+#忽略指定名称的网卡
+#spring:
+# cloud:
+#    inetutils:
+#      ignored-interfaces:
+#          - docker0
+#           - veth.*
+# erueka:
+#     instance:
+#       perfer-ip-address: true
+#使用正则表达式
+#  spring:
+#    cloud:
+#     inetutils:
+#       preferredNetworks:
+#        - 192.168
+#        - 10.0
+# erueka:
+#     instance:
+#       perfer-ip-address: true
+
+#只使用站点本地地址
+#    spring:
+#     cloud:
+#      inetutils:
+#       useOnlySiteLocalInterfaces: true
+#   erueka:
+#     instance:
+#       perfer-ip-address: true
+#
+#手动指定IP地址
+#   erueka:
+#     instance:
+#       perfer-ip-address: true
+#       ip-address: 127.0.0.1
+#
+
+

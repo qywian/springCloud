@@ -1,13 +1,12 @@
+server:
+  port: 8761
 spring:
   application:
     name: microservice-eureka-ha
-  profiles: qyw_1
-
-server:
-  port: 8761
+---
 eureka:
   instance:
-    hostname: qyw_1
+    hostname: peer1
   client:
     service-url:
-        defaultZone: http://qyw_2:8762/eureka/
+        defaultZone: http://peer2:8762/eureka/

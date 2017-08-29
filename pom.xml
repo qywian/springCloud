@@ -23,6 +23,10 @@
         <module>EurekaServer-ha-2</module>
         <module>EurekaServer</module>
         <module>EurekaClientServer</module>
+        <module>EurekaClientServer-ha</module>
+        <module>serviceProviderUser</module>
+        <module>serviceProviderUser-2</module>
+        <module>serviceConsumerRibbon</module>
     </modules>
 
     <properties>
