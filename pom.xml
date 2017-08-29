@@ -27,6 +27,8 @@
         <module>serviceProviderUser</module>
         <module>serviceProviderUser-2</module>
         <module>serviceConsumerRibbon</module>
+        <module>serviceConsumerRibbon-customizing</module>
+        <module>serviceConsumerRibbon-properties</module>
     </modules>
 
     <properties>
