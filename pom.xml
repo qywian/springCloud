@@ -26,9 +26,19 @@
         <module>EurekaClientServer-ha</module>
         <module>serviceProviderUser</module>
         <module>serviceProviderUser-2</module>
+        <module>serviceProviderUser-auth</module>
         <module>serviceConsumerRibbon</module>
+        <module>serviceConsumerRibbon-Hystrix</module>
         <module>serviceConsumerRibbon-customizing</module>
         <module>serviceConsumerRibbon-properties</module>
+        <module>serviceConsumerFeign</module>
+        <module>serviceConsumerFeign-customizing</module>
+        <module>serviceConsumerFeign-manual</module>
+        <module>hystrixdashboard</module>
+        <module>hystrixTurbine</module>
+        <module>zuul</module>
+        <module>zuul-filter</module>
+        <module>zuul-fallback</module>
     </modules>
 
     <properties>

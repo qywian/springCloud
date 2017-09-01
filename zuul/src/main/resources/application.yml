@@ -1,0 +1,31 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: service-geteway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123456@localhost:8761/eureka/
+#文件上传
+#zuul:
+#  routes:
+#   service-file-upload: /service-file-upload/**
+#
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+#ribbon:
+#  ConnectTimeout: 3000
+#  ReadTimeout: 60000
+
+#zuul:
+#  routes:
+#   service-provider-user:
+#    path: /user/**
+#    sensitive-headers: Cookie,Set-cookie,Authorization
+#    url: https://doenstream
+#指定微服务路径
+#zuul:
+#  routes:
+#   service-provider-user: user/**
+#忽略指定的微服务
+#  ignored-services: serverId 使用*可以忽略所有的微服务
